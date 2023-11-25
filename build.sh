@@ -29,16 +29,12 @@ for ref in $(ls -d $localedir/*/LC_MESSAGES 2>/dev/null); do
     lang_dir=${lang_dir%%/}
     lang=${lang_dir##*/}
 
-    # skip pot directory
-    if [[ "$lang" == 'pot' ]]; then
-        continue
-    fi
-
     # update language files
     echo -e "\e[7mupdating language ($lang)...\e[0m"
     $sphinxintl update \
                 --pot-dir "$potdir" \
-                --language "$lang"
+                --language "$lang" \
+                --locale-dir "$localedir"
 
     languages+=($lang)
 done
@@ -46,14 +42,14 @@ done
 # --- BUILD ---
 
 # fresh start
-rm -rf $outdir
-mkdir -p $outdir
+rm -rf "$outdir"
+mkdir -p "$outdir"
 
 # Add English
 languages+=("en")
 # build outputs for each language
 for lang in "${languages[@]}"; do
-    lang_target_dir=$outdir/$lang
+    lang_target_dir="$outdir/$lang"
     echo -e "\e[7mbuilding $lang ($builder)...\e[0m"
 
     # build documentation
