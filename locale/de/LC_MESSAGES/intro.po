@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, AuthorName
+# This file is distributed under the same license as the Another Sphinx
+# Template package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Another Sphinx Template \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-25 16:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../source/intro.md:1
+msgid "Introduction"
+msgstr "Einführung"
+
+#: ../source/intro.md:3
+msgid ""
+"This is based on [this](https://mystmd.org/guide/quickstart-myst-"
+"documents)."
+msgstr "Das ist die [Quelle](https://mystmd.org/guide/quickstart-myst-"
+"documents)."
+
+#: ../source/intro.md:5
+msgid "Fish"
+msgstr "Fisch"
+
+#: ../source/intro.md:13
+msgid ""
+"See [here](https://myst-"
+"parser.readthedocs.io/en/latest/syntax/images_and_figures.html)."
+msgstr ""
+"Siehe [hier](https://myst-"
+"parser.readthedocs.io/en/latest/syntax/images_and_figures.html)."
